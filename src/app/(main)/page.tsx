@@ -5,7 +5,7 @@ import { Sidebar } from "@/widgets/sidebar";
 import dynamic from "next/dynamic";
 
 const getData = async (): Promise<IItems[]> => {
-  const res = await fetch("https://logiclike.com/docs/courses.json");
+  const res = await fetch(`${process.env.API_URL}`);
 
   if (!res.ok) {
     throw new Error("Failed to fetch data");
