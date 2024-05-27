@@ -1,0 +1,11 @@
+.main {
+    max-width: 1551px;
+    margin: 0 auto;
+    padding: 24px;
+    display: flex;
+    column-gap: 15px;
+
+    & .content {
+        width: 100%;
+    }
+}

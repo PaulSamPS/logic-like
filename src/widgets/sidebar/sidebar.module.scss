@@ -1,0 +1,32 @@
+.wrapper {
+    box-sizing: border-box;
+    border: 1px solid $border;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    min-width: 264px;
+    height: fit-content;
+
+    & .item {
+        padding: 12px;
+        font-size: 18px;
+        font-weight: 800;
+        line-height: 18px;
+        letter-spacing: -0.1px;
+        cursor: pointer;
+        color: $black;
+        text-align: left;
+        outline-color: $green;
+
+        &:focus {
+            border-radius: 12px;
+        }
+    }
+
+    & .active {
+        background: $green;
+        color: $white;
+        border-radius: 12px;
+    }
+}
